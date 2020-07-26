@@ -1,0 +1,317 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: montserrat;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+   
+}
+.back{
+    width: 100%;
+    height: 100%;
+    background-color: #F5F9FC;
+    display: flex;
+}
+.sidemenubar{
+    position: fixed;
+    bottom: 0;
+}
+.back .main-content{
+    position: absolute;
+    left: 260px;
+    width:calc(100% - 260px);
+    min-height: 100%;
+    overflow-x: hidden;
+}
+.back .main-content .header{
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+.back .main-content .header .leftside{
+   display: flex;
+   align-items: center;
+   cursor: pointer;
+}
+.back .main-content .header .leftside i{
+    margin-right: 7px;
+    width: 10px;
+    height: 10px;
+    font-size: 12px;
+}
+.back .main-content .header .leftside h5{
+    font-size: 14px;
+    margin-top: 11px;
+}
+.back .main-content .header .rightside{
+    display: flex;
+    align-items: center;
+}
+.back .main-content .header .rightside i{
+    margin-right: 30px;
+    width: 10px;
+    height: 10px;
+    font-size: 16px;
+    color: #404040;
+}
+.back .main-content .header .rightside div{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    overflow: hidden;
+    object-position: center;
+
+}
+.back .main-content .header .rightside div img{
+    width: 100%;
+}
+.searchpanel{
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 100%;
+    z-index: -99;
+    left: -100%;
+    width: 100%;
+    padding:5px 40px;
+    background-color: white;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    transition: .5s;
+}
+.searchpanel input{
+    margin: 10px;
+    width: 30%;
+    height: 28px;
+    padding: 8px;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    font-size: 15px;
+}
+.searchpanel button{
+    width: 10%;
+    height: 28px;
+    margin: 10px;
+    background-color: #47BAC1;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: white;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 15px;
+}
+.searchpanel button:hover{
+    background-color: #34a6ac;
+    cursor: pointer;
+}
+.back .main-content .titlecontain{
+    padding:30px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.back .main-content .titlecontain h1{
+    font-size: 30px;
+    font-weight: 500;
+    color: #404040;
+}
+.back .main-content .titlecontain div button{
+    width: 80px;
+    margin-left: 10px;
+    height: 30px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: #47BAC1;
+    color: white;
+    font-size: 12px;
+    transition: .4s;
+
+}
+.back .main-content .titlecontain div button:hover{
+    background-color: #34a6ac;
+}
+.back .main-content .titlecontain div button i{
+    font-size: 10px;
+    margin-right: 7px;
+}
+.bothcontain{
+    width: 100%;
+    display: flex;
+}
+.tablecontain{
+    position: relative;
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    min-height:60%;
+    background-color: white;
+    padding: 10px 40px;
+    display: flex;
+    
+}
+.tablecontain .entry{
+    width: 100%;
+    height: 550px;
+    transition: .5s;
+}
+.tablecontain .entries{
+    padding: 15px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.tablecontain .entries:hover{
+    background-color: rgba(245, 245, 245, 0.397);
+    border-bottom: 1px solid #47BAC1;
+}
+.tablecontain .entries h1{
+    font-size: 18px;
+    width: 18%;
+}
+.tablecontain .entries h1 span{
+    font-family: lora;
+    color: #47BAC1;
+    margin-right: 6px;
+}
+.tablecontain .entries p{
+    width: 17%;
+    margin-top: 10px;
+}
+.tablecontain .entries p:nth-child(2){
+    width: 16%;
+}
+.tablecontain .entries p:nth-child(4){
+    width: 25%;
+}
+.tablecontain .entries p span{
+   font-weight: 500;
+   margin-left: 2px;
+}
+.tablecontain .entries input{
+    width: 20%;
+    min-height: 40px;
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    outline: none;
+}
+.tablecontain .black > h1{
+    width: 40%;
+}
+.tablecontain .black > p{
+    width: 50%;
+}
+.tablecontain .black > p:nth-child(2){
+    width: 50%;
+}
+.tablecontain .black > p:nth-child(4){
+    width: 50%;
+}
+.tablecontain .black > input{
+    width: 98%;
+}
+.tablecontain .frmcontain{
+    background-color: #Ffffff;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 45%;
+    min-height: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: .5s;
+}                                                              
+.tablecontain .frmcontain .head{
+    position: relative;
+    height: 60px;
+    display: flex;
+    padding: 0px 20px;
+    align-items:center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.301);
+}
+.tablecontain .frmcontain .head h1{
+    font-size: 20px;
+    font-weight: 550;
+    margin-top: 5px;
+}
+.tablecontain .frmcontain .head i{
+    font-size: 15px;
+    position: absolute;
+    top: 15%;
+    right: 2%;
+}
+.frmcontain .form{
+    width: 100%;
+    min-height: 100%;
+    padding: 10px 20px;
+}
+.frmcontain .form h5{
+    font-size: 14px;
+}
+.frmcontain .form .detail{
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #F5F9FC;
+}
+.frmcontain .form .detail span{
+    width: 100%;
+    padding: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.frmcontain .form .detail span label{
+    width: 25%;
+    margin-right: 5px;
+}
+.frmcontain .form .detail span input{
+    width: 70%;
+    height: 30px;
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.frmcontain .form .detail span textarea{
+     height: 100px;
+    row-gap :5;
+    width: 70%;
+    margin-right: 15px;
+    float:right;
+}
+.frmcontain .form .detail Button{
+    width: 80px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    height: 35px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: #47BAC1;
+    color: white;
+    font-size: 14px;
+    transition: .4s;
+}
+.frmcontain .form .detail button:hover{
+    background-color: #34a6ac;
+}
+
+
